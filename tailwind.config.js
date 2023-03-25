@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
-        roboto: ['Roboto', 'sans-serif'],
+        inter: ['Inter'],
+        roboto: ['Roboto'],
+        poppins: ['Poppins', 'sans-serif'],
       },
     },
   },

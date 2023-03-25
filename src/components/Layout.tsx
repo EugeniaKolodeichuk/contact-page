@@ -4,7 +4,7 @@ import AppBar from './AppBar';
 
 const Layout = () => {
   return (
-    <div style={{ margin: '0 auto' }}>
+    <div className="bg-[#FBFBFB]" style={{ margin: '0 auto' }}>
       <header>
         <AppBar />
       </header>

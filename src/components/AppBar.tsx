@@ -16,7 +16,7 @@ const AppBar = () => {
   ];
 
   return (
-    <nav className=" bg-[#FBFBFB]">
+    <nav>
       <div className="container flex flex-wrap items-center justify-between px-5 py-7 lg:p-10 mx-auto">
         <a href="/" className="flex items-center">
           <p className="text-lg font-inter font-extrabold lg:text-2xl">Logo Here</p>
