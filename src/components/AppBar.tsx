@@ -44,8 +44,18 @@ const AppBar = () => {
             ))}
           </ul>
           <div className="flex ml-[60px]">
-            <AiOutlineUser className="h-[31px] w-[31px] mr-[36px] border rounded-full border-black p-[5px]" />
-            <BsCart className="h-[31px] w-[31px] border rounded-full border-black p-[5px]" />
+            <button
+              type="button"
+              className="p-[5px] border rounded-full border-black mr-[36px] h-[31px] w-[31px] flex items-center justify-center"
+            >
+              <AiOutlineUser className="w-full" />
+            </button>
+            <button
+              type="button"
+              className="p-[5px] border rounded-full border-black h-[31px] w-[31px] flex items-center justify-center"
+            >
+              <BsCart className="w-full" />
+            </button>
           </div>
         </div>
       </div>
