@@ -10,6 +10,7 @@ module.exports = {
       },
       boxShadow: {
         form: '0 0 60px 30px rgba(0, 0, 0, 0.03)',
+        button: '0 0 14px rgba(0, 0, 0, 0.12)',
       },
     },
   },
