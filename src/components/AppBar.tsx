@@ -5,6 +5,7 @@ import { AiOutlineUser } from 'react-icons/ai';
 import { BsCart } from 'react-icons/bs';
 import { IoMdClose } from 'react-icons/io';
 
+//here the correct routes can be added
 const navItems: { title: string; route: string }[] = [
   { title: 'Home', route: '/' },
   { title: 'Features', route: '' },
@@ -15,10 +16,14 @@ const navItems: { title: string; route: string }[] = [
 ];
 
 const AppBar = () => {
+  //implement state to save isOpen or !isOpen status of burger menu
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="shadow filter drop-shadow(0px -2px 4px rgba(0, 0, 0, 0.25)) lg:shadow-none">
+      {/* depending on whether the menu window is open on the mobile device or not, we choose the type
+      of navigation */}
+
       {isOpen && (
         <div className="fixed inset-0 z-10 container w-screen max-w-none h-screen bg-black px-5 pt-[28px] pb-[30px] items-stretch overscroll-none lg:hidden">
           <div className="flex justify-between mb-[57px]">
@@ -28,6 +33,7 @@ const AppBar = () => {
               className="w-6 h-6 cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
+              {/* I implemented icons from React Icons that similar to that ones from layout */}
               <IoMdClose className="fill-white w-full h-full" />
             </button>
           </div>
@@ -80,6 +86,7 @@ const AppBar = () => {
         <div className="hidden w-full lg:flex lg:w-auto">
           <ul className="flex lg:space-x-[47px]">
             {navItems.map((item, index) => (
+              /* here can be implemented the logic of active links that depends on the ending of the page URL */
               <li key={index} className="flex items-center font-roboto  text-[#1F1F1F]">
                 <a
                   className={item.title === 'Contact' ? 'font-semibold' : 'font-normal'}
@@ -87,6 +94,8 @@ const AppBar = () => {
                 >
                   {item.title}
                 </a>
+
+                {/* here can be added necessary features in 'feature' dropdown */}
                 {item.title === 'Features' && (
                   <MdOutlineKeyboardArrowDown
                     className="flex items-center ml-1 cursor-pointer"

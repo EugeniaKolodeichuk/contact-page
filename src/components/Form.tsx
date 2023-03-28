@@ -14,11 +14,11 @@ import letterSend from '../assets/letter-send.png';
 import letterSendMob from '../assets/letter-send_mobile.png';
 
 const Form = () => {
-  const labels: { title: string }[] = [
-    { title: 'First Name' },
-    { title: 'Last Name' },
-    { title: 'Email' },
-    { title: 'Phone Number' },
+  const labels: { title: string; type: string }[] = [
+    { title: 'First Name', type: 'text' },
+    { title: 'Last Name', type: 'text' },
+    { title: 'Email', type: 'email' },
+    { title: 'Phone Number', type: 'tel' },
   ];
 
   const radioLabels: { title: string; value: string }[] = [
@@ -112,7 +112,7 @@ const Form = () => {
               {label.title}
               <input
                 className="appearance-none pb-[10px] pt-[5px] text-sm bg-transparent border-b border-[#8D8D8D] w-full text-[#8D8D8D] focus:border-b-black focus:text-black focus:outline-none"
-                type="text"
+                type={label.type}
                 aria-label={label.title}
               />
             </label>

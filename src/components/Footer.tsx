@@ -3,31 +3,33 @@ import { BiPhoneCall } from 'react-icons/bi';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
 
+//here the correct routes can be added
+const companyItems: { title: string; route: string }[] = [
+  { title: 'About', route: '' },
+  { title: 'Contact', route: '' },
+  { title: 'Blogs', route: '' },
+];
+
+const legalItems: { title: string; route: string }[] = [
+  { title: 'Privacy Policy', route: '' },
+  { title: 'Terms & Services', route: '' },
+  { title: 'Terms of Use', route: '' },
+  { title: 'Refund Policy', route: '' },
+];
+
+const quickLinksItems: { title: string; route: string }[] = [
+  { title: 'Techlabz Keybox', route: '' },
+  { title: 'Downloads', route: '' },
+  { title: 'Forum', route: '' },
+];
+
 const Footer = () => {
-  const companyItems: { title: string; route: string }[] = [
-    { title: 'About', route: '' },
-    { title: 'Contact', route: '' },
-    { title: 'Blogs', route: '' },
-  ];
-
-  const legalItems: { title: string; route: string }[] = [
-    { title: 'Privacy Policy', route: '' },
-    { title: 'Terms & Services', route: '' },
-    { title: 'Terms of Use', route: '' },
-    { title: 'Refund Policy', route: '' },
-  ];
-
-  const quickLinksItems: { title: string; route: string }[] = [
-    { title: 'Techlabz Keybox', route: '' },
-    { title: 'Downloads', route: '' },
-    { title: 'Forum', route: '' },
-  ];
-
   return (
     <footer className=" bg-black px-5 pt-5 pb-[35px] lg:px-[80px] lg:pb-[66px] lg:pt-[80px] text-white font-poppins">
       <div className="container mx-auto">
         <h2 className="font-inter text-center font-extrabold text-4xl mb-[45px]">Logo Here</h2>
         <hr className="mb-[30px]" />
+        {/* styles for the tablet screen invented by myself */}
         <div className="flex flex-col lg:flex-row w-full xl:pl-5 justify-between">
           <div className="w-full grid grid-cols-2 gap-[77px] gap-y-[30px] mb-[40px] lg:mb-0 lg:flex lg:justify-between lg:pr-[50px] xl:pr-[96px]">
             <ul className="font-normal text-xs xl:text-base">
@@ -36,6 +38,8 @@ const Footer = () => {
               </h3>
               <li className="flex flex-col items-start lg:flex-row lg:items-center mb-5 lg:mb-6">
                 <BiPhoneCall className="w-6 h-6 mb-[13px] lg:mb-0 lg:mr-[25px]" />
+
+                {/* links can help user to make a call or open map and email */}
                 <a href="tel:+10123456789">+1012 3456 789</a>
               </li>
               <li className="flex flex-col items-start lg:flex-row lg:items-center mb-5 lg:mb-6">
