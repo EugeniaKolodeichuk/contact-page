@@ -29,7 +29,7 @@ const Form = () => {
   ];
 
   return (
-    <div className="relative w-full min-h-[1030px] lg:max-w-[1196px] lg:min-h-[667px] bg-white p-[5px] lg:py-[10px] lg:pl-[10px] lg:pr-0 mx-auto mb-[50px] rounded-[5px] lg:rounded-[10px] shadow-form flex flex-col lg:flex-row">
+    <div className="relative mx-[20px] min-h-[1030px] lg:max-w-[1196px] lg:min-h-[667px] bg-white p-[5px] lg:py-[10px] lg:pl-[10px] lg:pr-0 lg:mx-auto mb-[50px] rounded-[5px] lg:rounded-[10px] shadow-form flex flex-col lg:flex-row">
       <img
         className="hidden lg:flex absolute bottom-[-38px] right-[133px]"
         src={letterSend}

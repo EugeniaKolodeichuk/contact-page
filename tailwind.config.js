@@ -7,6 +7,7 @@ module.exports = {
         inter: ['Inter'],
         roboto: ['Roboto'],
         poppins: ['Poppins'],
+        manrope: ['Manrope'],
       },
       boxShadow: {
         form: '0 0 60px 30px rgba(0, 0, 0, 0.03)',

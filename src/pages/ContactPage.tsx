@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import Form from '../components/Form';
 
 const ContactPage = () => {
@@ -11,6 +12,7 @@ const ContactPage = () => {
         </p>
       </div>
       <Form />
+      <Footer />
     </>
   );
 };
